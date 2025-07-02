@@ -146,7 +146,9 @@ const Emotion_Buddy = () => {
     setMessage('');
   
     try {
-      const API_BASE = process.env.REACT_APP_API_BASE_URL;
+      // const API_BASE = process.env.REACT_APP_API_BASE_URL;
+      const API_BASE = "https://emotion-pdf-bot-app.onrender.com";
+
       const response = await axios.post(`${API_BASE}/emotion_chat`, { message });
       setChatHistory((prevChatHistory) => [
         ...prevChatHistory.slice(0, -1), // Remove the "Loading..." placeholder
