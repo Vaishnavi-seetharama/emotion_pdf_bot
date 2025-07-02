@@ -147,7 +147,7 @@ const Emotion_Buddy = () => {
   
     try {
       const API_BASE = process.env.REACT_APP_API_BASE_URL;
-      const response = await axios.post('${API_BASE}/emotion_chat', { message });
+      const response = await axios.post(`${API_BASE}/emotion_chat`, { message });
       setChatHistory((prevChatHistory) => [
         ...prevChatHistory.slice(0, -1), // Remove the "Loading..." placeholder
         { isUser: false, text: response.data.response },
