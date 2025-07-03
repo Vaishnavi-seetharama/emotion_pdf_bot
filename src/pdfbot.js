@@ -273,11 +273,13 @@ const PdfBot = () => {
       <Header onClick={() => navigate('/')}>
         <LogoPlaceholder>VS</LogoPlaceholder>
         Vaishnavi Seetharama
+          
+      </Header>
+      <TopRightHeading>Pdf-Bot
           <p style={{ fontSize: '0.9rem', color: '#555', marginTop: '4px' }}>
         😊 <strong>Chat with your PDF</strong>
       </p>
-      </Header>
-      <TopRightHeading>Pdf-Bot</TopRightHeading>
+          </TopRightHeading>
           
       <LeftPane>
         {!isUploaded ? (
