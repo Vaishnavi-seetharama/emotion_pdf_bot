@@ -215,6 +215,7 @@ const PdfBot = () => {
 
     try {
       const API_BASE = process.env.REACT_APP_API_BASE_URL;
+      const API_BASE = "https://emotion-pdf-bot-app.onrender.com";
       const response = await axios.post('${API_BASE}/upload', formData, {
         onUploadProgress: (progressEvent) => {
           const progress = Math.round((progressEvent.loaded * 100) / progressEvent.total);
