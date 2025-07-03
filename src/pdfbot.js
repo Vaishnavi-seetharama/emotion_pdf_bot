@@ -270,18 +270,15 @@ const PdfBot = () => {
 
   return (
     <AppContainer>
-      <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', paddingTop: '20px' }}>
-    <div>
-      <TopRightHeading>Pdf-Bot</TopRightHeading>
-      <p style={{ fontSize: '0.9rem', color: '#555', marginTop: '4px' }}>
+      <AppContainer>
+      <Header onClick={() => navigate('/')}>
+        <LogoPlaceholder>VS</LogoPlaceholder>
+        Vaishnavi Seetharama
+          <p style={{ fontSize: '0.9rem', color: '#555', marginTop: '4px' }}>
         😊 <strong>Chat with your PDF</strong>
       </p>
-    </div>
-    <div>
-      <LogoPlaceholder>VS</LogoPlaceholder>
-      Vaishnavi Seetharama
-    </div>
-  </Header>
+      </Header>
+      <TopRightHeading>Pdf-Bot</TopRightHeading>
           
       <LeftPane>
         {!isUploaded ? (
