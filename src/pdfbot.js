@@ -214,7 +214,7 @@ const PdfBot = () => {
     formData.append('file', selectedFile);
 
     try {
-      const API_BASE = process.env.REACT_APP_API_BASE_URL;
+      // const API_BASE = process.env.REACT_APP_API_BASE_URL;
       const API_BASE = "https://emotion-pdf-bot-app.onrender.com";
       const response = await axios.post('${API_BASE}/upload', formData, {
         onUploadProgress: (progressEvent) => {
