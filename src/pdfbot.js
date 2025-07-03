@@ -277,7 +277,7 @@ const PdfBot = () => {
       </Header>
       <TopRightHeading>Pdf-Bot
           <p style={{ fontSize: '0.9rem', color: '#555', marginTop: '4px' }}>
-        😊 <strong>Chat with your PDF</strong>
+        💬 <strong>Ask anything about your uploaded PDF (max 2 MB ) .</strong>
       </p>
           </TopRightHeading>
           
