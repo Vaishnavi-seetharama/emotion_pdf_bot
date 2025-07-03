@@ -274,7 +274,11 @@ const PdfBot = () => {
         <LogoPlaceholder>VS</LogoPlaceholder>
         Vaishnavi Seetharama
       </Header>
+          <p style={{ fontSize: '0.9rem', color: '#555' }}>
+    😊 <strong>Express how you feel!</strong> Type your thoughts or mood and let the Emotion Buddy respond with empathy and support.
+  </p>
       <TopRightHeading>Pdf-Bot</TopRightHeading>
+          
       <LeftPane>
         {!isUploaded ? (
           <>
