@@ -153,7 +153,7 @@ const Emotion_Buddy = () => {
   { message }, 
   { 
     // Remove if not using cookies or auth
-    withCredentials: true 
+    // withCredentials: true 
   }
 );
       setChatHistory((prevChatHistory) => [
