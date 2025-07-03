@@ -149,7 +149,13 @@ const Emotion_Buddy = () => {
       // const API_BASE = process.env.REACT_APP_API_BASE_URL;
       const API_BASE = "https://emotion-pdf-bot-app.onrender.com";
 
-      const response = await axios.post("https://emotion-pdf-bot-app.onrender.com/emotion_chat", { message });
+      const response = await axios.post(`${API_BASE}/emotion_chat`, 
+  { message }, 
+  { 
+    // Remove if not using cookies or auth
+    withCredentials: true 
+  }
+);
       setChatHistory((prevChatHistory) => [
         ...prevChatHistory.slice(0, -1), // Remove the "Loading..." placeholder
         { isUser: false, text: response.data.response },
