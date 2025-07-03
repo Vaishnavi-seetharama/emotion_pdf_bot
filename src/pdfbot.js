@@ -270,7 +270,6 @@ const PdfBot = () => {
 
   return (
     <AppContainer>
-      <AppContainer>
       <Header onClick={() => navigate('/')}>
         <LogoPlaceholder>VS</LogoPlaceholder>
         Vaishnavi Seetharama
