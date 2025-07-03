@@ -184,6 +184,9 @@ const Emotion_Buddy = () => {
         Vaishnavi Seetharama
       </Header>
       <TopRightHeading>Emotion-Buddy</TopRightHeading>
+          <p style={{ fontSize: '0.9rem', color: '#555' }}>
+    😊 <strong>Express how you feel!</strong> Type your thoughts or mood and let the Emotion Buddy respond with empathy and support.
+  </p>
       <ChatContainer>
         {chatHistory.map((chat, index) => (
           <ChatMessage key={index} isUser={chat.isUser}>
