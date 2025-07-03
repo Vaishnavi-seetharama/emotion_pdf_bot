@@ -270,14 +270,18 @@ const PdfBot = () => {
 
   return (
     <AppContainer>
-      <Header onClick={() => navigate('/')}>
-        <LogoPlaceholder>VS</LogoPlaceholder>
-        Vaishnavi Seetharama
-      </Header>
-          <p style={{ fontSize: '0.9rem', color: '#555' }}>
-    😊 <strong>Express how you feel!</strong> Type your thoughts or mood and let the Emotion Buddy respond with empathy and support.
-  </p>
+      <Header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', paddingTop: '20px' }}>
+    <div>
       <TopRightHeading>Pdf-Bot</TopRightHeading>
+      <p style={{ fontSize: '0.9rem', color: '#555', marginTop: '4px' }}>
+        😊 <strong>Chat with your PDF</strong>
+      </p>
+    </div>
+    <div>
+      <LogoPlaceholder>VS</LogoPlaceholder>
+      Vaishnavi Seetharama
+    </div>
+  </Header>
           
       <LeftPane>
         {!isUploaded ? (
